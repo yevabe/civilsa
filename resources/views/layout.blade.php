@@ -40,7 +40,7 @@
 	<meta name="twitter:creator" content="@civilsa">
 	<meta name="twitter:title" content="CIVILSA S.A.S - Ingenieria Civil y Sanitaria" />
 	<meta name="twitter:description" content="Ingeniería Civil y Sanitaria es una empresa Antioqueña especialista en ingeniería, proyectos y construcciones hidrosaniatarias desde 2010, habiendo realizado actuaciones en más de 500 proyectos hidráulicos en el ámbito local y nacional.">
-	<meta name="twitter:image" content="https://civilsa.com.co/img/gota.png">
+	<meta name="twitter:image" content="https://civilsa.com.co/img/gota.jpg">
 
 	<!-- Facebook -->
 	<meta property="og:locale" content="es_ES" />
@@ -52,8 +52,8 @@
 	<meta property="article:author" content="https://www.facebook.com/@civilsa" />
 	<meta property="article:tag" content="CIVILSA S.A.S - Ingenieria Civil y Sanitaria" />
 	<meta property="og:type" content="website">
-	<meta property="og:image" content="https://civilsa.com.co/img/gota.png">
-	<meta property="og:image:secure_url" content="https://civilsa.com.co/img/gota.png">
+	<meta property="og:image" content="https://civilsa.com.co/img/gota.jpg">
+	<meta property="og:image:secure_url" content="https://civilsa.com.co/img/gota.jpg">
 	<meta property="og:image:type" content="image/jpg">
 	<meta property="og:image:width" content="1200">
 	<meta property="og:image:height" content="630">
