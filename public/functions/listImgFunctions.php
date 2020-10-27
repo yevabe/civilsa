@@ -16,7 +16,7 @@ function listarArchivosAdjuntos($idProject)
             $template .= "<img class='card-img-top img-fluid' src='storage/projects/" . utf8_encode($row['name_file']) . "'>";
         }
     } else {
-        $template .= "<img class='card-img-top img-fluid' src='img/houses.svg'>";
+        $template .= "<img class='card-img-top img-fluid' src='img/logo_gota.png'>";
     }
     echo $template;
 }
@@ -47,7 +47,7 @@ function listImages($idProject)
         }
     } else {
         $template = "<div class='carousel-item active' > ";
-        $template .= "<img class='d-block w-100 img-fluid mb-4' src='/img/houses.svg' alt='Imagen del proyecto $idProject'>";
+        $template .= "<img class='d-block w-100 img-fluid mb-4' src='/img/logo_gota.png' alt='Imagen del proyecto $idProject'>";
         $template .= '</div>';
     }
     echo $template;
