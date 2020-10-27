@@ -1,0 +1,379 @@
+/*********************************************************************************************************************/
+
+.overlayMensajesApp {
+    position: fixed;
+    z-index: 99999;
+    padding-top: 30px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0, 0.4);
+    /* background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 10%, #000 100%); */
+}
+
+.overlayModalApp {
+    position: fixed;
+    z-index: 1000;
+    padding-top: 30px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 10%, #000 100%); */
+}
+
+.overlayModalAppSuper {
+    position: fixed;
+    z-index: 1100;
+    padding-top: 30px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.body-msg {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 5px;
+    border: 1px solid #fefefe;
+    overflow: auto;
+    border-radius: 5px;
+    width: 30%;
+    cursor: pointer;
+    margin-top: 20%;
+}
+
+.modalApp-body {
+    background-color: #fefefe;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    margin: auto;
+    border: 0px solid rgb(255, 255, 255);
+    overflow-x: hidden;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-top: 0%;
+}
+
+.modalAppSuper-body {
+    background-color: #fefefe;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    margin: auto;
+    border: 0px solid rgb(255, 255, 255, 0.1);
+    overflow-x: hidden;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-top: 3%;
+}
+
+.text-modal {
+    margin-top: 5%;
+    color: var(--white);
+}
+
+/* .modalApp-header {
+    width: 100%;
+    height: 7%;
+    font-weight: bold;
+    text-align: center;
+    height: 2%;
+    padding-bottom: 4%;
+} */
+.modalApp-header {
+    width: 100%;
+    height: 0 !important;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 0 !important;
+}
+
+.modalAppSuper-header {
+    width: 100%;
+    height: 7%;
+    font-weight: bold;
+    text-align: center;
+    height: 2%;
+    padding-bottom: 4%;
+}
+
+.modalApp-title {
+    margin-top: 0.5% !important;
+    text-align: left !important;
+    margin-left: 0.5% !important;
+    font-weight: bold;
+}
+
+.modalAppSuper-title {
+    font-weight: bold;
+}
+
+.modalApp-content {
+    overflow-y: auto;
+    width: 100%;
+    height: 90%;
+}
+
+.modalAppSuper-content {
+    overflow-y: auto;
+    width: 100%;
+    height: 90%;
+}
+
+/* The Close Button */
+
+.modalApp-close {
+    float: right;
+    font-size: 30px;
+    margin-right: 1%;
+    margin-top:-0.5%;
+    cursor: pointer;
+}
+
+.modalApp-close:hover {
+    font-weight: bold;
+}
+
+.modalAppSuper-close {
+    float: right;
+    font-size: 30px;
+    margin-right: 1%;
+    cursor: pointer;
+}
+
+.modalAppSuper-close:hover {
+    font-weight: bold;
+}
+
+iframe {
+    outline: none;
+    /* border: 1px solid #f7f7f7; */
+    border-radius: 2px;
+    border-collapse: collapse;
+    width: 80%;
+    height: 430px;
+    /* height: auto; */
+}
+
+iframe:focus {
+    outline: none;
+    border: 0px solid #75b8e9;
+    border-radius: 3px;
+    border-collapse: collapse;
+}
+
+iframe[seamless] {
+    display: block;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1920px) {
+    iframe {
+        outline: none;
+        /* border: 1px solid #f7f7f7; */
+        border-radius: 2px;
+        border-collapse: collapse;
+        width: 64%;
+        height: 300px;
+        /* height: auto; */
+    }
+    iframe:focus {
+        outline: none;
+        border: 0px solid #75b8e9;
+        border-radius: 3px;
+        border-collapse: collapse;
+    }
+    iframe[seamless] {
+        display: block;
+    }
+}
+
+.table-msg {
+    border: 0px;
+    margin-bottom: 0px;
+    background-color: var(--white);
+    z-index: 0;
+    padding: 0;
+    margin: 0 px;
+    border-collapse: none;
+    border-spacing: 0px;
+    box-shadow: none;
+    border-bottom: none;
+}
+
+.table-msg:hover,
+.table-msg:focus {
+    background-color: var(--white);
+}
+
+.text-mensaje {
+    font-size: medium;
+    text-transform: inherit;
+    cursor: pointer;
+}
+
+.closeMsg {
+    position: fixed;
+    top: 0;
+    right: 2;
+}
+
+/*Botón de mensajes Confirm*/
+
+.btn-information {
+    color: var(--gestor-texto);
+    text-decoration: none;
+    background-color: var(--gestor);
+    border-radius: 5px;
+    padding: 3px 3px 3px 3px;
+    border: 1px solid var(--gestor);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-information:hover,
+.btn-information:active {
+    color: var(--gestor-texto);
+    text-decoration: none;
+    background-color: var(--gestor);
+    display: inline-block;
+    background-image: none;
+}
+
+@media screen and (max-width: 200px) {
+    .table-msg {
+        width: 100%;
+    }
+}
+
+/**************************************************************** Mensajes Login **************************************************************************************/
+
+.notificationSuccess {
+    background: var(--white);
+    display: inline-block;
+    border: 1px solid var(--white);
+    border-left-width: 4px;
+    border-left-color: var(--success);
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-radius: 5px;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    position: fixed;
+    top: 10%;
+    right: 0.5%;
+    width: 30%;
+    cursor: pointer;
+    font-size: 15px;
+    z-index: 99999;
+}
+
+.notificationConfirm {
+    background: var(--white);
+    display: inline-block;
+    border: 1px solid var(--white);
+    border-left-width: 4px;
+    border-left-color: var(--success);
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-radius: 5px;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    position: fixed;
+    top: 10%;
+    right: 0.5%;
+    width: 30%;
+    cursor: pointer;
+    font-size: 15px;
+    z-index: 99999;
+}
+
+.notificationError {
+    background: var(--white);
+    display: inline-block;
+    border: 1px solid var(--white);
+    border-left-width: 4px;
+    border-left-color: var(--error);
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-radius: 5px;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    position: fixed;
+    top: 10%;
+    right: 0.5%;
+    width: 30%;
+    cursor: pointer;
+    font-size: 15px;
+    z-index: 99999;
+}
+
+.notificationWarning {
+    background: var(--white);
+    display: inline-block;
+    border: 1px solid var(--white);
+    border-left-width: 4px;
+    border-left-color: var(--warning);
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-radius: 5px;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    position: fixed;
+    top: 10%;
+    right: 0.5%;
+    width: 30%;
+    cursor: pointer;
+    font-size: 15px;
+    z-index: 99999;
+}
+
+.mensajesLogin {
+    background: var(--white);
+    display: inline-block;
+    border: 1px solid var(--white);
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-radius: 5px;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    position: fixed;
+    top: 10%;
+    right: 0.5%;
+    width: 30%;
+    cursor: pointer;
+    font-size: 15px;
+    z-index: 99999;
+}
+
+@media screen and (max-width: 600px) {
+    .notificationError,
+    .notificationSuccess,
+    .notificationConfirm,
+    .notificationWarning,
+    .mensajesLogin {
+        width: 100%;
+        top: 0%;
+        left: 0%;
+        border-radius: 0;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (max-width: 600px) {
+    .modalApp-body {
+        width: 95% !important;
+        height: 70% !important;
+    }
+    .modalAppSuper-body {
+        width: 95% !important;
+        height: 50% !important;
+    }
+}
